@@ -73,11 +73,11 @@ fun InputBlock(
                 if(inputText.value != "")
                     calculate(inputText.value)
                 else
-                    Toast.makeText(context,"Please, enter your value",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context,"Por favor, insira um valor",Toast.LENGTH_SHORT).show()
             },
                 modifier = modifier.fillMaxWidth(1f)) {
 
-                Text(text = "Convert",
+                Text(text = "Converter",
                     fontSize = 36.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Blue)

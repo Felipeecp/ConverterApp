@@ -39,7 +39,7 @@ fun ConversionMenu(
 ){
 
     var displayingText by rememberSaveable {
-        mutableStateOf("Select the conversion type")
+        mutableStateOf("Selecione o tipo de conversão")
     }
 
     // Para definir a mesma largura para o dropdown e para o TextField
@@ -68,7 +68,7 @@ fun ConversionMenu(
                     .onGloballyPositioned { coordinates ->
                         textFieldSize = coordinates.size.toSize()
                     },
-                label = {Text(text = "Conversion type")},
+                label = {Text(text = "Tipo de conversão")},
                 trailingIcon = {
                     Icon(imageVector = icon, contentDescription = "icon",
                         modifier.clickable { expanded = !expanded })
@@ -84,7 +84,7 @@ fun ConversionMenu(
                     .onGloballyPositioned { coordinates ->
                         textFieldSize = coordinates.size.toSize()
                     },
-                label = {Text(text = "Conversion type")},
+                label = {Text(text = "Tipo de conversão")},
                 trailingIcon = {
                     Icon(imageVector = icon, contentDescription = "icon",
                         modifier.clickable { expanded = !expanded })

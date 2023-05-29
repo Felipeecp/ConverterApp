@@ -50,7 +50,7 @@ fun TopScreen(
             decimalFormat.roundingMode =RoundingMode.DOWN
             val roundedResult = decimalFormat.format(result)
 
-            val message1 = "${typedValue.value} ${selectedConversion.value!!.convertFrom} is equal to"
+            val message1 = "${typedValue.value} ${selectedConversion.value!!.convertFrom} é igual a"
             val message2 = "$roundedResult ${selectedConversion.value!!.convertTo}"
             if(toSave){
                 save(message1,message2)
